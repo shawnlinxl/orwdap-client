@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { Responsive, Visibility, Segment, Container, Menu, Sidebar, Icon, Button} from 'semantic-ui-react'
+import {Responsive, Visibility, Segment, Container, Menu, Sidebar, Icon} from 'semantic-ui-react'
 import Logo from '../../assets/images/logo.png'
+import LogoSquare from '../../assets/images/logo_square.png'
 
-class DesktopContainer extends Component {
+class DesktopNavbar extends Component {
   state = {}
 
   hideFixedMenu = () => this.setState({ fixed: false })
@@ -60,7 +61,7 @@ class DesktopContainer extends Component {
   }
 }
 
-class MobileContainer extends Component {
+class MobileNavbar extends Component {
   state = {}
 
   handlePusherClick = () => {
@@ -79,7 +80,7 @@ class MobileContainer extends Component {
     return (
       <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
         <Sidebar.Pushable>
-          <Sidebar as={Menu} animation='uncover' vertical visible={this.state.sidebarOpened}>
+          <Sidebar as={Menu} animation='overlay' vertical visible={this.state.sidebarOpened}>
               <Menu.Item>
                 <img src={Logo} alt="Girls Enterprise Logo" style={{height: "74px", width: "188px"}}/>
               </Menu.Item>
@@ -115,6 +116,9 @@ class MobileContainer extends Component {
                   <Menu.Item onClick={this.handleToggle}>
                     <Icon name='sidebar' />
                   </Menu.Item>
+                  <Menu.Item position='right'>
+                    <img src={LogoSquare} alt="Girls Enterprise Logo"/>
+                  </Menu.Item>
                 </Menu>
               </Container>
             </Segment>
@@ -127,11 +131,11 @@ class MobileContainer extends Component {
   }
 }
 
-const ResponsiveContainer = ({ children }) => (
+const Navbar = ({ children }) => (
   <div>
-    <DesktopContainer>{children}</DesktopContainer>
-    <MobileContainer>{children}</MobileContainer>
+    <DesktopNavbar>{children}</DesktopNavbar>
+    <MobileNavbar>{children}</MobileNavbar>
   </div>
 ) 
 
-export default ResponsiveContainer;
+export default Navbar;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Responsive, Visibility, Segment, Container, Menu, Sidebar, Icon} from 'semantic-ui-react'
+import {Link} from 'react-router-dom';
 import Logo from '../../assets/images/logo.png'
 import LogoSquare from '../../assets/images/logo_square.png'
 
@@ -39,17 +40,42 @@ class DesktopNavbar extends Component {
                 name='home'
                 active={this.state.activeItem === 'home'}
                 onClick={this.handleItemClick}
+                as={Link}
+                to="/"
               >
-                Home
+              Home
               </Menu.Item>
 
               <Menu.Item
                 name='about'
                 active={this.state.activeItem === 'about'}
                 onClick={this.handleItemClick}
+                as={Link}
+                to="/about"
               >
-                About
+              About
               </Menu.Item>
+
+              <Menu.Item
+                name='programmes'
+                active={this.state.activeItem === 'programmes'}
+                onClick={this.handleItemClick}
+                as={Link}
+                to="/programmes"
+              >
+              Programmes
+              </Menu.Item>
+
+              <Menu.Item
+                name='volunteer'
+                active={this.state.activeItem === 'volunteer'}
+                onClick={this.handleItemClick}
+                as={Link}
+                to="volunteer"
+              >
+              Volunteer
+              </Menu.Item>
+
 
             </Menu>
           </Segment>
@@ -89,18 +115,42 @@ class MobileNavbar extends Component {
                 name='home'
                 active={this.state.activeItem === 'home'}
                 onClick={this.handleItemClick}
+                as={Link}
+                to="/"
               >
-                Home
+              Home
               </Menu.Item>
 
               <Menu.Item
                 name='about'
                 active={this.state.activeItem === 'about'}
                 onClick={this.handleItemClick}
+                as={Link}
+                to="/about"
               >
-                About
+              About
               </Menu.Item>
-          </Sidebar>
+
+              <Menu.Item
+                name='programmes'
+                active={this.state.activeItem === 'programmes'}
+                onClick={this.handleItemClick}
+                as={Link}
+                to="/programmes"
+              >
+              Programmes
+              </Menu.Item>
+
+              <Menu.Item
+                name='volunteer'
+                active={this.state.activeItem === 'volunteer'}
+                onClick={this.handleItemClick}
+                as={Link}
+                to="volunteer"
+              >
+              Volunteer
+              </Menu.Item>
+            </Sidebar>
 
           <Sidebar.Pusher
             dimmed={this.state.sidebarOpened}
@@ -132,10 +182,10 @@ class MobileNavbar extends Component {
 }
 
 const Navbar = ({ children }) => (
-  <div>
+  <>
     <DesktopNavbar>{children}</DesktopNavbar>
     <MobileNavbar>{children}</MobileNavbar>
-  </div>
+  </>
 ) 
 
 export default Navbar;

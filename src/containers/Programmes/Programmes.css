@@ -1,0 +1,14 @@
+#healthcarephoto {
+    background: url("../../assets/images/africadoctor.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+#childrenphoto {
+    background: url("../../assets/images/africachildren.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+#classroomphoto {
+    background: url("../../assets/images/africaclassroom.jpg") no-repeat center fixed;
+    background-size: cover;
+}

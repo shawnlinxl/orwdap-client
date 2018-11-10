@@ -1,14 +1,19 @@
 import React from 'react';
-import {Segment, Grid} from 'semantic-ui-react'
+import {Responsive, Segment, Image} from 'semantic-ui-react'
 import './Home.css'
+import Girls from '../../assets/images/africangirls.jpg'
 
 const Home = (props) => {
     return(
         <>
-          <Segment id="homeintro" style={{ padding: '8em 0em', height: '40em' }} vertical>
-            <Grid container stackable verticalAlign='middle'>
-            </Grid>
+        <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+        <Image src={Girls} width="100%"/>
+        </Responsive>
+
+        <Responsive minWidth={Responsive.onlyTablet.minWidth}>
+          <Segment id="homeintro" style={{height: '40em' }} vertical>
           </Segment>
+        </Responsive>
         </>
     )
 }

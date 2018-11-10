@@ -144,7 +144,6 @@ class NavbarAuto extends Component {
           <Sidebar.Pusher
             dimmed={this.state.sidebarOpened}
             onClick={this.handlePusherClick}
-            style={{ minHeight: '100vh' }}
           >
             <Segment
               textAlign='center'

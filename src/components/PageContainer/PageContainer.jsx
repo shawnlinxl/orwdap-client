@@ -6,8 +6,10 @@ import Footer from '../Footer/Footer'
 const PageContainer = ({children}) => {
     return(
         <>
-          <Navbar> {children} </Navbar>
-          <Footer />
+          <Navbar> 
+            {children}
+            <Footer />
+          </Navbar>
         </>
     )
 }

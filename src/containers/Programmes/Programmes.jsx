@@ -23,7 +23,7 @@ const Programmes = (props) => {
         <>
         <Responsive minWidth={Responsive.onlyTablet.minWidth}>
             <Segment id="healthcarephoto" basic />
-            <Segment style={{ padding: '4em 0em', minHeight: '20em'}} basic>
+            <Segment style={{ padding: '4em 0em', minHeight: '35em'}} basic>
             <Grid container stackable verticalAlign='middle'>
             <Grid.Row centered>
                 <Grid.Column width={6}>
@@ -58,7 +58,7 @@ const Programmes = (props) => {
 
         <Responsive minWidth={Responsive.onlyTablet.minWidth}>
             <Segment id="classroomphoto" basic />
-            <Segment style={{ padding: '4em 0em', minHeight: '20em'}} basic>
+            <Segment style={{ padding: '4em 0em', minHeight: '35em'}} basic>
             <Grid container stackable verticalAlign='middle'>
             <Grid.Row centered reversed="computer tablet">
                 <Grid.Column width={6}>
@@ -103,7 +103,7 @@ const Programmes = (props) => {
         <Responsive minWidth={Responsive.onlyTablet.minWidth}>
             <Segment id="childrenphoto" basic />
 
-            <Segment style={{ padding: '4em 0em', minHeight: '20em'}} basic>
+            <Segment style={{ padding: '4em 0em', minHeight: '35em'}} basic>
             <Grid container stackable verticalAlign='middle'>
             <Grid.Row centered>
                 <Grid.Column width={6}>

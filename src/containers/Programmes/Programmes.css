@@ -1,17 +1,17 @@
 #healthcarephoto {
     background: url("../../assets/images/africadoctor.jpg") no-repeat center fixed;
     background-size: contain;
-    height: 25em;
+    height: 35em;
 }
 
 #childrenphoto {
     background: url("../../assets/images/africachildren.jpg") no-repeat center fixed;
     background-size: contain;
-    height: 25em;
+    height: 35em;
 }
 
 #classroomphoto {
     background: url("../../assets/images/africaclassroom.jpg") no-repeat center fixed;
     background-size: contain;
-    height: 25em;
+    height: 35em;
 }

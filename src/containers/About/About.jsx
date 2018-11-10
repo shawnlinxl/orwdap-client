@@ -1,6 +1,7 @@
 import React from 'react';
-import {Segment, Grid, Header, Image} from 'semantic-ui-react'
-import './About.css'
+import {Responsive, Segment, Grid, Header, Image} from 'semantic-ui-react';
+import ORWDAP from '../../assets/images/aboutorwdap.jpg';
+import './About.css';
 
 const imgTextHeader =  {
     color: 'white',
@@ -30,6 +31,11 @@ const TextBody = {
 const About = (props) => {
     return(
         <>
+        <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
+        <Image src={ORWDAP} width="100%"/>
+        </Responsive>
+
+        <Responsive minWidth={Responsive.onlyTablet.minWidth}>
           <Segment id="aboutintro" style={{ padding: '8em 0em', height: '40em' }} vertical>
             <Grid container stackable verticalAlign='middle'>
             <Grid.Row>
@@ -42,6 +48,7 @@ const About = (props) => {
             </Grid.Row>
             </Grid>
           </Segment>
+        </Responsive>
 
           <Segment style={{ padding: '2em 0em'}} basic>
             <Grid container stackable verticalAlign='middle'>
@@ -49,7 +56,7 @@ const About = (props) => {
                 <Grid.Column width={4}>
                     <Header style={TextHeader} as='h1'> Our Story </Header>
                 </Grid.Column>
-                <Grid.Column width={10} style={TextBody}>
+                <Grid.Column width={12} style={TextBody}>
                     The Organisation for Rural Women’s Development Association for Progress (ORWDAP) was initiated in 1990 and gained its registered status in 1998 by a group of women whose main objective was to meet the needs of women living in remote areas. The organisation has since evolved to include other activities such as leadership development, healthcare development and community outreach, all with the focus of developing and empowering women in rural areas.
                 </Grid.Column>
             </Grid.Row>
@@ -62,7 +69,7 @@ const About = (props) => {
                 <Grid.Column width={4}>
                     <Header style={TextHeader} as='h1'> Our Team </Header>
                 </Grid.Column>
-                <Grid.Column width={10}>
+                <Grid.Column width={12}>
                     <Grid>
                         <Grid.Row>
                             <Grid.Column width={4}>

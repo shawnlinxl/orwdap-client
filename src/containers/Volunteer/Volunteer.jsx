@@ -37,6 +37,8 @@ const Volunteer = (props) => {
             Children’s development: Opportunities for people who are passionate about child development and education; developing lessons and creative workshops for children who aren’t able to go to school.
             </li>
         </ul>
+
+        Contact us at: info@orwdap.org
         </div>
         
         </Container>

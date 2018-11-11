@@ -1,9 +1,9 @@
 import React from 'react';
 import {Responsive, Segment, Grid, Header, Image} from 'semantic-ui-react';
 import "./Programmes.css"
-import Doctors from "../../assets/images/africadoctor.jpg";
-import Classroom from "../../assets/images/africaclassroom.jpg";
-import Children from "../../assets/images/africachildren.jpg";
+import Doctors from "../../assets/images/healthcare.jpg";
+import Classroom from "../../assets/images/education.jpg";
+import Children from "../../assets/images/children.jpg";
 
 const TextHeader = {
     fontSize: '2em',

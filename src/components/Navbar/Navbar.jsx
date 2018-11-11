@@ -42,7 +42,7 @@ class NavbarAuto extends Component {
             >
 
               <Menu.Item>
-                <img src={Logo} alt="Girls Enterprise Logo" style={{height: "74px", width: "188px"}}/>
+                <img src={Logo} alt="ORWDAP Logo" style={{height: "74px", width: "74px"}}/>
               </Menu.Item>
 
               <Menu.Item
@@ -97,7 +97,7 @@ class NavbarAuto extends Component {
         <Sidebar.Pushable>
           <Sidebar as={Menu} animation='overlay' vertical visible={this.state.sidebarOpened}>
               <Menu.Item>
-                <img src={Logo} alt="Girls Enterprise Logo" style={{height: "74px", width: "188px"}}/>
+                <img src={Logo} alt="ORWDAP Logo" style={{height: "74px", width: "74px"}}/>
               </Menu.Item>
 
               <Menu.Item
@@ -155,7 +155,7 @@ class NavbarAuto extends Component {
                     <Icon name='sidebar' />
                   </Menu.Item>
                   <Menu.Item position='right'>
-                    <img src={LogoSquare} alt="Girls Enterprise Logo"/>
+                    <img src={LogoSquare} alt="ORWDAP Logo"/>
                   </Menu.Item>
                 </Menu>
               </Container>
